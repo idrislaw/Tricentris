@@ -6,6 +6,10 @@
   - module created by tricentis tosca e.g url module
 
 
+## Benefits
+- Create automated test cases by scanning the app
+- 
+
 
 ## Perequisite
 - Windows OS required
@@ -19,3 +23,7 @@ Install tosca extension in your browser
 ## Disadvantages
 Tosca does not support MacOs/Linux
 No integration with Git
+
+## My Sumamry
+
+- Tosca scans your test application and genertaes modules from scanning it. 
