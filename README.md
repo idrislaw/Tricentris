@@ -3,20 +3,15 @@
 Tosca is an AI based no code automation tool for end to end automation testing
 
 ## Architecture
- 
-- Tosca Commander/Components
+The tosca architecture can be described as having the following framework:
 
+- Tosca Commander/Components
 - Repository Setup
     - Single User: Local storage
     - Multi User : MySQL, SQlite, DB2
-
-- Licensing
-   - Cloud License
-   - OnPremise/Concurrent License
-        - Online
-        - Offline
-   - Local Machine/NodeLock License
-
+- Licensing Model
+   - Cloud License: floating licensing via Cloud-hosted license server managed by Tricentis
+   - OnPremise/Concurrent License: floating licensing via your own, on-premise license server. Requires seperate and independent server setup. Server does not have to be connected to the internet.
 - User Management
 
 
@@ -24,6 +19,7 @@ Tosca is an AI based no code automation tool for end to end automation testing
 - No coding required
 - Create automated test cases by scanning the app
 - Offers 14-days trial period
+- Idle license release on timeout
 
 
 ## Pre-requisite
@@ -32,21 +28,26 @@ Tosca is an AI based no code automation tool for end to end automation testing
 
 
 ## Installation
-- Log into your tosca account to download the installation file [here](https://www.tricentis.com/software-testing-tool-trial-demo/tosca-trial/)
-- Click [How to Install Tosca](https://documentation.tricentis.com/tosca/1410/en/content/installation_tosca/installation_gui.html) for detailed installation 
-- Install the tosca commander 
-- Install tosca extension in your browser
+- Go to [Download Tosca](https://www.tricentis.com/software-testing-tool-trial-demo/tosca-trial/) page, log into your tosca account and download the installation file
+- Go to [Install Tosca](https://documentation.tricentis.com/tosca/1410/en/content/installation_tosca/installation_gui.html) for detailed installation instruction.
+   - Install the tosca commander
+   - Install the tosca server (if distributed execution is required) 
 
 
 ## Usage Summary
-- Open the sample web application to be tested in a browser
-- Launch the tosca commander application and go to the **Modules** tab. 
-- Scan your sample web application and select controls to be tested, this process will generate your **Test_Modules**
-- Navigate to the **TestCases** tab and create a new **TestCase** folder for your sample app
-- Drag the scanned **Test_Modules** into your **TestCase** folder to create your **TestCase** and **Test_Steps**
-- Navigate to the **Execution** tab and create a new **Execution_List_Folder** for your sample app
-- Drag the ceated **TestCases** into your **ExcutionListFolder** to create your **Execution_List**
-- You can run the **Execution_list** manually by hitting ```F6``` or automate it using **Jenkins**
+### 1. Scan your sample application to create modules
+  - Open a sample web application to be tested in a browser
+  - Launch the tosca commander application and go to the **Modules** tab. 
+  - Scan your sample web app and select controls to be tested, this process will create your **Test Modules*
+  
+### 2. Create a Testcase from your Modules
+  - Navigate to the **TestCases** tab and create a new **TestCase** folder for your sample app
+  - Drag the scanned **Test_Modules** into your **TestCase** folder to create your **TestCase** and **Test_Steps**
+  
+3. Run your Testcase
+  - Navigate to the **Execution** tab and create a new **Execution List Folder** for your sample app
+  - Drag the ceated **TestCases** into your **ExecutionListFolder** to create your **Execution List**
+  - You can run the **Execution list** manually by hitting ```F6``` or automate it using **Jenkins**
 
 
 # CI Integration with Jenkins
