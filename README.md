@@ -1,14 +1,15 @@
 ## What is Tricentis Tosca
 
-Tosca is an AI based no code automation tool for end to end automation testing
+Tosca is an AI based no code tool for end to end automation testing
 
 ## Architecture
-The tosca architecture can be described as having the following framework:
+The tosca architecture is made of:
 
 - Tosca Commander/Components
+- Workspace
 - Repository Setup
     - Single User: Local storage
-    - Multi User : MySQL, SQlite, DB2
+    - Multi User : MySQL Server, Oracle, SQlite, DB2
 - Licensing Model
    - Cloud License: floating licensing via Cloud-hosted license server managed by Tricentis
    - OnPremise/Concurrent License: floating licensing via your own, on-premise license server. Requires seperate and independent server setup. Server does not have to be connected to the internet.
@@ -37,14 +38,14 @@ The tosca architecture can be described as having the following framework:
 ## Usage Summary
 ### 1. Scan your sample application to create modules
   - Open a sample web application to be tested in a browser
-  - Launch the tosca commander application and go to the **Modules** tab. 
+  - Launch the tosca commander application and go to the **Modules** tab
   - Scan your sample web app and select controls to be tested, this process will create your **Test Modules*
   
 ### 2. Create a Testcase from your Modules
   - Navigate to the **TestCases** tab and create a new **TestCase** folder for your sample app
   - Drag the scanned **Test_Modules** into your **TestCase** folder to create your **TestCase** and **Test_Steps**
   
-3. Run your Testcase
+### 3. Run your Testcase
   - Navigate to the **Execution** tab and create a new **Execution List Folder** for your sample app
   - Drag the ceated **TestCases** into your **ExecutionListFolder** to create your **Execution List**
   - You can run the **Execution list** manually by hitting ```F6``` or automate it using **Jenkins**
@@ -92,7 +93,6 @@ The tosca architecture can be described as having the following framework:
 .
 .
 .
-
 
 Click to learn more about [Tosca CI](https://documentation.tricentis.com/tosca/1430/en/content/continuous_integration/concept.html)
 
