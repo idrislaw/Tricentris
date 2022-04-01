@@ -95,7 +95,7 @@ The tosca architecture is made of:
 .
 .
 
-Click to learn more about [Tosca CI](https://documentation.tricentis.com/tosca/1430/en/content/continuous_integration/concept.html)
+Click to learn more about [Tosca CI](https://documentation.tricentis.com/tosca/1430/en/content/continuous_integration/concept.htm)
 
-Click to learn more about [Tosca CI with Jenkins](https://support-hub.tricentis.com/open?id=kb_article_view&sys_kb_id=c52c6bbdb7413c0b53310284b96198b)
+Click to learn more about [Tosca CI with Jenkins](https://support-hub.tricentis.com/open?id=kb_article_view&sys_kb_id=c52c6bbbdb7413c0b53310284b96198b)
 
