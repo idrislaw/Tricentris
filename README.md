@@ -79,11 +79,12 @@ The tosca architecture is made of:
 
 
 ## Setup on Jenkins Side (Remote Execution)
-1. Launch your Jenkins instance
-2. Install the tricentis continuous integration plugin in Jenkins
-3. Create a new Jenkins job
-4. On the build step, select *Tricentis Continuos Integration* plugin
-5. Enter code as below
+1. Run the **ToscaCIRemoteExecution.exe** located in ``` C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\ ```
+2. Launch your Jenkins instance
+3. Install the tricentis continuous integration plugin in Jenkins
+4. Create a new Jenkins job
+5. On the build step, select *Tricentis Continuos Integration* plugin
+6. Enter code as below
 
 ``` C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\Client\ToscaCIClient.exe ```
 
