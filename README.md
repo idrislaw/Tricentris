@@ -99,3 +99,17 @@ Click to learn more about [Tosca CI](https://documentation.tricentis.com/tosca/1
 
 Click to learn more about [Tosca CI with Jenkins](https://support-hub.tricentis.com/open?id=kb_article_view&sys_kb_id=c52c6bbbdb7413c0b53310284b96198b)
 
+
+## DEX Agent Setup
+
+1. Launch the windows agent machine as per [requirements](https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fdocumentation.tricentis.com%2ftosca%2f1500%2fen%2fcontent%2fsystemrequirements%2fsystemrequirements.htm&c=E,1,OggFVo_vS8WMPGTWghV25qcStBwnV6nZ22wqz06piUo4HxyJOxtUy1y_tm2s8aLxyjxVy0V-esr7u2Vxz2i6me7XY4R1FlKvwIWnAAPcqSd3F_P5GJIOIOqAIC8,&typo=1)
+
+2. Install tosca commander using the installation file [here](https://linkprotect.cudasvc.com/url?a=https%3a%2f%2ffiles.tricentis.com%2fpublic.php%3fservice%3dfiles%26t%3da495f05633153fd4b77c6fbb46b9fab3%26download&c=E,1,Hkn0hHeKvemmCGmXQMp7esXqxPZPZ__sK3N1AMSPAm16GLFNa0MaIhaSvRN0CVGmx7w7nR9Hj9a6spm4NkE__Ozq4DVUASEZWU3ReYikLA,,&typo=1)
+3. Run the **Tosca Distributed Execution Service** located in ``` "C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\DistributedExecution\ToscaDistributionAgent.exe" ```
+4. Go to configure agent setting and add the license server address as shown 
+5. 
+  ![image](https://user-images.githubusercontent.com/92812029/167954378-a5c39320-89a2-4a0d-b250-d1a4fbe33d6e.png)
+
+5. Open the Tosca License Configuration in windows app and activate the license by connecting to License Server
+6. Copy **Tosca Distributed Execution Service** into the windows startup folder to enable auto start on windows startup
+7. Lunch commander to check that license is active. 
